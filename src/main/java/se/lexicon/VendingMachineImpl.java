@@ -4,10 +4,13 @@ import java.util.ArrayList;
 import java.util.List;
 
 public class VendingMachineImpl implements IVendingMachine{
+
     private List<Product> products = new ArrayList<>();
     private int balance = 0;
 
     public VendingMachineImpl() {
+        products = new ArrayList<>();
+
     products.add(new Snack(101,"- Estrella Grill Chips ->",25,7,true,
             175,520));
     products.add(new Beverage(201,"- Coca Cola ->",15,20,330,true,
@@ -48,7 +51,7 @@ public class VendingMachineImpl implements IVendingMachine{
                 }
                 // Purchase is Successful
                 if (balance < p.getPrice()) {
-                    System.out.println("Not Enough Money");
+                    System.out.println("Not Enough Balance");
                     return null;
                 }
                 balance -= p.getPrice();
