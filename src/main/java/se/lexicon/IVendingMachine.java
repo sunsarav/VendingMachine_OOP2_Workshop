@@ -6,7 +6,7 @@ public interface IVendingMachine {
 
     void insertCoin(int coin);
     int getBalance();
-    void purchaseProduct(int productId);
+    Product purchaseProduct(int productId);
     int returnChange();
     List<Product> getProducts();
 
