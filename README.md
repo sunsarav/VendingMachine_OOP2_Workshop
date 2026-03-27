@@ -1,3 +1,4 @@
+```mermaid
 classDiagram
     class IVendingMachine {
         <<interface>>
@@ -57,3 +58,4 @@ classDiagram
     IVendingMachine <|.. VendingMachineImpl : Implements
     VendingMachineImpl --> Product : Manages
     ConsoleUI ..> IVendingMachine : Uses
+    ```
