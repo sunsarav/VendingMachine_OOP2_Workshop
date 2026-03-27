@@ -1,15 +1,17 @@
-# 🍫 Vending Machine - OOP Exercise
+#  Vending Machine - OOP Exercise
 
 A Java-based Vending Machine application designed to demonstrate the core principles of **Object-Oriented Programming**
 
-## 🚀 Features
+##  Features
 *   **Abstraction**: Uses an `IVendingMachine` interface and an abstract `Product` class to define system behavior.
 *   **Inheritance**: Specific products like `Snack`, `Beverage`, and `Fruit` extend the base `Product` class.
 *   **Polymorphism**: Different products provide their own details via overridden `getDescription()` methods.
 *   **Encapsulation**: Private fields with public getters/setters protect the internal state of the machine and products.
-*   **Unit Testing**: Robust business logic verified with **JUnit 5** test cases.
+*   **Unit Testing with JUnit**: Robust business logic verified with **JUnit 5** test cases.
+*   **Build a runnable JAR file**
+  
 
-## 🛠️ How to Run
+##  How to Run
 1.  **Clone the repository**:
     ```bash
     git clone [YOUR_REPOSITORY_URL]
