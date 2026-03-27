@@ -1,6 +1,11 @@
+import se.lexicon.Fruit;
+import se.lexicon.Product;
 import se.lexicon.VendingMachineImpl;
 import org.junit.jupiter.api.BeforeEach;
 import org.junit.jupiter.api.Test;
+
+import java.util.List;
+
 import static org.junit.jupiter.api.Assertions.*;
 
 
@@ -9,7 +14,8 @@ public class VendingMachineImplTest {
 
     @BeforeEach
     public void setup() {
-        vm = new VendingMachineImpl();
+       vm = new VendingMachineImpl();
+
     }
 
     @Test
@@ -34,17 +40,18 @@ public class VendingMachineImplTest {
                 "coin is inserted.");
     }
     @Test
-    public void purchaseProductSuccessfully() {
-        // Given: product price is 20, product quantity is 3 & balance is 0
-        int productId = 1;
-        vm.
-        // When: insert 20
+    void getProductsReturnsAllItems() {
+        // Given: Machine has 3 products
 
-        vm.insertCoin(20);
+        // When: Calling getProducts()
+        List<Product> allProducts = vm.getProducts();
 
-        // Then: Purchase success, balance 0, Quantity 2
-        assertEquals(0,vm.getBalance());
+        // Then: List size is 0
+        assertNotNull(allProducts, "Returned List should not be null");
+        assertEquals(3,allProducts.size(),"Machine should contain exactly 3 Products");
     }
 
-
 }
+
+
+
