@@ -53,9 +53,7 @@ public class VendingMachineImpl implements IVendingMachine{
                     System.out.println("Not Enough Balance");
                     return null;
                 }
-                balance -= p.getPrice();
-                p.decreaseQuantity();
-                return p;
+
             }
         }
         // Loop Finishes - Never found the ID

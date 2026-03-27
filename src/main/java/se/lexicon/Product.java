@@ -29,10 +29,6 @@ public abstract class Product {
         return quantity;
     }
 
-    // Method to decrease the count of the product
-    public void decreaseQuantity() {
-        quantity--;
-    }
     // Implemented by child classes
     public abstract String getDescription();
 
